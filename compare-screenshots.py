@@ -51,8 +51,8 @@ def compare_screenshots(base_images_path, compare_images_path, diff_images_path)
 
 
 # if __name__ == '__main__':
-#     compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/Test/compare-images/',
-#                     'E:/RobotFrameworkProjects/compare-screenshots/Test/diff-images/')
+#     compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
+#                     'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/')
 
 
 

@@ -54,14 +54,22 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-141428926">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compare-screenshots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="238">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -73,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/Test.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="221" selection-start-line="6" selection-start-column="158" selection-end-line="6" selection-end-column="221" />
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -81,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Diff Report/diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="194">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
@@ -109,16 +117,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/compare-screenshots" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/compare-screenshots.py" />
         <option value="$PROJECT_DIR$/Test.robot" />
         <option value="$PROJECT_DIR$/Diff Report/index.html" />
         <option value="$PROJECT_DIR$/Diff Report/templates/index.html" />
         <option value="$PROJECT_DIR$/Diff Report/diff.py" />
+        <option value="$PROJECT_DIR$/compare-screenshots.py" />
       </list>
     </option>
   </component>
@@ -149,6 +157,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -278,8 +287,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Diff Report/diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="194">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
@@ -289,14 +298,14 @@
     <entry file="file://$PROJECT_DIR$/Test.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="221" selection-start-line="6" selection-start-column="158" selection-end-line="6" selection-end-column="221" />
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/compare-screenshots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="238">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
