@@ -4,12 +4,18 @@ import imutils
 import os
 
 
+"""
+This is a private method which will take two input images and compare it and save it in a location
+"""
+
+
 def __compare_image(path_one, path_two, diff_save_location):
     """
-    Compares to images and saves a diff image, if there
+    Compares two images and saves a diff image, if there
     is a difference
     @param: path_one: The path to the base image
     @param: path_two: The path to the compare image
+    @param: diff_save_location: Path where we want to save diff image
     """
     imageA = cv2.imread(path_one)
     imageB = cv2.imread(path_two)
@@ -24,17 +30,16 @@ def __compare_image(path_one, path_two, diff_save_location):
                             cv2.CHAIN_APPROX_SIMPLE)
     cnts = cnts[0] if imutils.is_cv2() else cnts[1]
 
+    # Checking whether there is a difference in image or not
     if cnts:
         for c in cnts:
-            # compute the bounding box of the contour and then draw the
-            # bounding box on both input images to represent where the two
-            # images differ
             (x, y, w, h) = cv2.boundingRect(c)
             cv2.rectangle(imageA, (x, y), (x + w, y + h), (0, 0, 255), 2)
             cv2.rectangle(imageB, (x, y), (x + w, y + h), (0, 0, 255), 2)
         cv2.imwrite(diff_save_location + "diff_" + os.path.basename(path_two), imageB)
     else:
-        print("No Difference found between " + path_one + " & " + path_two)
+        # If difference is not found then logging which image do not have differences
+        print("No Difference found between " + " Image A: " + path_one + " & " + " Image B: " + path_two)
 
 
 def compare_screenshots(base_images_path, compare_images_path, diff_images_path):
@@ -51,8 +56,8 @@ def compare_screenshots(base_images_path, compare_images_path, diff_images_path)
 
 
 # if __name__ == '__main__':
-#     compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
-#                     'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/')
+#      compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
+#                      'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/')
 
 
 

@@ -13,6 +13,8 @@ def index():
     compare_images = []
     print(app.config['FOLDER_PATH'])
     folder_path = app.config['FOLDER_PATH']
+    shutil.rmtree('static/images')
+    os.mkdir('static/images')
     for file in os.listdir(folder_path):
         compare_images.append(file)
         shutil.copy(os.path.join(folder_path, file), 'static/images')

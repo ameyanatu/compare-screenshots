@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1a2 (Python 3.7.1 on win32)" generated="20181121 23:01:09.211" rpa="false">
+<suite id="s1" name="Test" source="E:\RobotFrameworkProjects\compare-screenshots\compare-screenshots\Test.Robot">
+<test id="s1-t1" name="comparing screenshots">
+<kw name="Compare Screenshots" library="compare-screenshots">
+<arguments>
+<arg>${base-imagepath}</arg>
+<arg>${compare-imagepath}</arg>
+<arg>${diff-imagepath}</arg>
+</arguments>
+<msg timestamp="20181121 23:01:11.326" level="INFO">No Difference found between  Image A: E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/google_home_page.png &amp;  Image B: E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/google_home_page.png</msg>
+<status status="PASS" starttime="20181121 23:01:10.658" endtime="20181121 23:01:11.326"></status>
+</kw>
+<status status="PASS" starttime="20181121 23:01:10.657" endtime="20181121 23:01:11.327" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181121 23:01:09.214" endtime="20181121 23:01:11.329"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

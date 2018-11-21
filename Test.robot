@@ -1,7 +1,13 @@
 **** Settings ***
 Library  compare-screenshots.py
 
-*** Test Cases ***
+#Robot -d Robot-Result Test.Robot
+**** Variables ***
 
+${base-imagepath}  E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/
+${compare-imagepath}  E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/
+${diff-imagepath}  E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/
+
+*** Test Cases ***
 comparing screenshots
-    compare screenshots  E:/RobotFrameworkProjects/compare-screenshots/Test/base-images/  E:/RobotFrameworkProjects/compare-screenshots/Test/compare-images/  E:/RobotFrameworkProjects/compare-screenshots/Test/diff-images/
+    compare screenshots  ${base-imagepath}  ${compare-imagepath}  ${diff-imagepath}
