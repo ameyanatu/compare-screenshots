@@ -8,11 +8,11 @@ This is a Robot Framework library which contains one single keyword "compare scr
 
 (Note: Please consider image or images as a screenshot or screenshots) :blush:
 
-base_image_path: in this folder path should contain all base-line screenshots which are previously validated manually.
+base_image_path: This folder path should contain manually validated screenshots which act like baseline for your project.
 
-compare_image_path: in this folder path should contain all new build screenshots which you want to compare with baseline images.
+compare_image_path: This folder path should contain new build screenshots, which you want to compare with baseline images.
 
-diff_image_path: in this folder path should contain all the difference found images which later you can move it to base_image_path folder if difference is valid. If difference is not valid  you can log a defect.
+diff_image_path: This folder path should contain difference found images which later you can move it to base_image_path folder if difference is valid. If difference is not valid then you can log a defect.
 
 How to use this library:
 
