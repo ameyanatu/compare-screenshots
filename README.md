@@ -1,14 +1,12 @@
-[![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots)
-
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
 # compare-screenshots
+
+[![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 This is a Robot Framework library which contains one single keyword "compare screenshots" with three arguments.
 
 {base_image_path, compare_image_path, diff_image_path}
 
-(Note: Please consider image or images as a screenshot or screenshots) :-)
+(Note: Please consider image or images as a screenshot or screenshots) :blush:
 
 base_image_path: in this folder path should contain all base-line screenshots which are previously validated manually.
 
