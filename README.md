@@ -2,12 +2,12 @@
 
 [![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-### This is a Robot Framework library which contains one single keyword "compare screenshots" with three arguments.
+### This is a Robot Framework library which has one single keyword "compare screenshots" with three arguments.
 
 | Argument      | Description                    |
 | ------------- | ------------------------------ |
 | `base_screenshots_path`      | This folder path should contain manually validated screenshots which act like baseline for your project.|
-| `compare_screenshots_path`   | This folder path should contain new build screenshots, which you want to compare with baseline images.|
+| `compare_screenshots_path`   | This folder path should contain new build screenshots, which you want to compare with baseline screenshots.|
 | `diff_screenshots_path`   | This folder path should contain difference found screenshots which later you can move it to base_screenshots_path folder if difference is valid.|
 
 
