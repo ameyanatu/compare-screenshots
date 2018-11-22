@@ -14,9 +14,9 @@
 
 #### How to use this library:
 
-1. Download compare-screenshots.py from this repository
-2. Copy compare-screenshots.py file to your Robot Framework project.
-3. Then simply use it in your Robot file and use "compare screenshots" keyword.
+1. Download 'compare-screenshots.py' from this repository
+2. Copy 'compare-screenshots.py' file to your Robot Framework project.
+3. Then simply use it in your Robot file and use 'compare screenshots' keyword.
 
 #### Credits:
 
