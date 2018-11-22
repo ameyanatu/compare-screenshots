@@ -1,8 +1,8 @@
-#### compare-screenshots
+# compare-screenshots
 
 [![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-This is a Robot Framework library which contains one single keyword "compare screenshots" with three arguments.
+### This is a Robot Framework library which contains one single keyword "compare screenshots" with three arguments.
 
 | Argument      | Description                    |
 | ------------- | ------------------------------ |
@@ -13,14 +13,15 @@ This is a Robot Framework library which contains one single keyword "compare scr
 
 How to use this library:
 
-1. Download and install all the necessary libraries from Requirements.txt
-2. Then download compare-screenshots.py file to your framework's  library folder.
-3. Then simply use this  library in your Robot file and use "compare screenshots" keyword.
+1. Download compare-screenshots.py from this repository
+2. Copy compare-screenshots.py file to your Robot Framework project.
+3. Then simply use it in your Robot file and use "compare screenshots" keyword.
 
-For more information please read following linkedin article :
+Credits:
+
+1. RobotFramework (http://robotframework.org/)
+2. OpenCV (https://opencv.org/)
 
 
-**Free Software, Hell Yeah!**
-
-
+If you have any questions / suggestions / comments on the library, please feel free to reach me on ameyanatu@yahoo.com
 
