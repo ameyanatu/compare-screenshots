@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-### This is a Robot Framework library which has one single keyword "compare screenshots" with three arguments.
+#### This is a Robot Framework library which has one single keyword "compare screenshots" with three arguments. Using this library we can perform visual testing using Robot Framework.
 
 | Argument      | Description                    |
 | ------------- | ------------------------------ |
