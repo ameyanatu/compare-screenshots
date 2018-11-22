@@ -2,6 +2,8 @@ from skimage.measure import compare_ssim
 import cv2
 import imutils
 import os
+import subprocess
+import pathlib
 
 
 """
@@ -54,10 +56,12 @@ def compare_screenshots(base_images_path, compare_images_path, diff_images_path)
     for (fileA, fileB) in zip(base_images, compare_images):
         __compare_image(fileA, fileB, diff_images_path)
 
+    #os.system("Python " + os.path.realpath(__file__).replace(__file__, "") + "Diff-Report" + "\diff.py " + diff_images_path.replace('/', "\Ameya").replace("Ameya", ""))
+    #print("python " + os.getcwd().replace("\\", "/") + """/Diff Report/""" + "diff.py" + " " + diff_images_path.replace("'", ""))
+    #subprocess.call(["python", os.getcwd().replace("\\", "/") + """/Diff Report/""" + "diff.py", "path", diff_images_path], shell=False)
+    #print("Python " + os.path.realpath(__file__).replace(__file__, "") + """Diff Report""" + "\diff.py " + diff_images_path.replace('/', "\Ameya").replace("Ameya", ""))
 
-# if __name__ == '__main__':
-#      compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
-#                      'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/')
 
-
-
+if __name__ == '__main__':
+    compare_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/', 'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
+                      'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/diff-images/')
