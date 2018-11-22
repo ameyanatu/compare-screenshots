@@ -10,7 +10,6 @@
 | `compare_screenshots_path`   | This folder path should contain new build screenshots, which you want to compare with baseline screenshots.|
 | `diff_screenshots_path`   | This folder path should contain difference found screenshots which later you can move it to base_screenshots_path folder if difference is valid.|
 
-
 How to use this library:
 
 1. Download compare-screenshots.py from this repository
