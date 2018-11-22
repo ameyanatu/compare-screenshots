@@ -3,12 +3,10 @@
 [![HitCount](http://hits.dwyl.io/ameyanatu/compare-screenshots.svg)](http://hits.dwyl.io/ameyanatu/compare-screenshots)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ameyanatu/compare-screenshots/blob/master/compare-screenshots.py/graphs/commit-activity)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/ameyanatu)
-
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 ----------------------------------------------------------------------------------------------------------------------------------------
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 ----------------------------------------------------------------------------------------------------------------------------------------
-
 
 #### This is a Robot Framework library which has one single keyword "compare screenshots" with three arguments. Using this library we can perform visual testing using Robot Framework.
 
@@ -32,5 +30,5 @@
 
 ##### If you have any questions / suggestions / comments on the library, please feel free to reach me on ameyanatu@yahoo.com
 
-https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
 
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/ameyanatu)
