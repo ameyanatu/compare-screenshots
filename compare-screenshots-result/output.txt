@@ -1,0 +1,5 @@
+Compare Screenshots Output: 
+
+Base Screenshots: 	google_home_page.png
+Compare Screenshots: 	google_home_page.png
+Difference found in (1) Screenshots: 	google_home_page.png
