@@ -23,7 +23,7 @@
 3. Copy 'compare-screenshots.py' file to your Robot Framework project.
 4. Then simply use it in your Robot file and use keywords in your test cases or tasks. 
 
-##### (Note: This library tested on windoes platform however I am sure it will work on Linux platform as well. If you found any issue then please let me know.)
+##### (Note: This library tested on windows platform, however, I am sure it will work on the Linux platform as well. If you found any issue then please let me know.)
 
 #### For more information regarding this library please read my article on LinkedIn: 
 
