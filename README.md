@@ -25,6 +25,8 @@
 
 (Note: This library tested on windoes platform however I am sure it will work on Linux platform as well. If you found any issue then please let me know.)
 
+#### For more information regarding this library please read my article on LinkedIn: 
+
 #### Credits:
 
 1. RobotFramework (http://robotframework.org/)
