@@ -11,3 +11,4 @@ ${diff-imagepath}  E:/RobotFrameworkProjects/compare-screenshots/compare-screens
 *** Test Cases ***
 comparing screenshots
     compare screenshots  ${base-imagepath}  ${compare-imagepath}  ${diff-imagepath}
+    create report  ${base-imagepath}  ${compare-imagepath}  ${diff-imagepath}

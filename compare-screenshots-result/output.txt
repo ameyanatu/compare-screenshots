@@ -1,5 +1,5 @@
-Compare Screenshots Output: 
+2018-11-24 17:51:37 Compare Screenshots Output: 
 
-Base Screenshots: 	google_home_page.png
-Compare Screenshots: 	google_home_page.png
-Difference found in (1) Screenshots: 	google_home_page.png
+Base Screenshots: 	amazon_india_apple_iphone_x.jpg	amazon_india_home_page.jpg
+Compare Screenshots: 	amazon_com_apple_iphone_x.jpg	amazon_com_home_page.jpg
+Difference found in (2) Screenshots: 	amazon_com_apple_iphone_x.jpg	amazon_com_home_page.jpg

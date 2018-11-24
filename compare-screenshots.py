@@ -3,7 +3,10 @@ import cv2
 import imutils
 import os
 import shutil
+import time
+import datetime
 
+ROBOT_CONTINUE_ON_FAILURE = True
 
 """
 This is a private method which will take two input images and compare it and save it in a location
@@ -50,16 +53,19 @@ def __compare_image(path_one, path_two, diff_save_location):
 
 
 def compare_screenshots(base_images_path, compare_images_path, diff_images_path):
-    base_images = []
-    for file in os.listdir(base_images_path):
-        base_images.append(os.path.join(base_images_path,file))
+    if os.path.exists(base_images_path) and os.path.exists(compare_images_path) and os.path.exists(diff_images_path):
+        base_images = []
+        for file in os.listdir(base_images_path):
+            base_images.append(os.path.join(base_images_path,file))
+        compare_images = []
+        for file in os.listdir(compare_images_path):
+            compare_images.append(os.path.join(compare_images_path, file))
 
-    compare_images = []
-    for file in os.listdir(compare_images_path):
-        compare_images.append(os.path.join(compare_images_path, file))
+        for (fileA, fileB) in zip(base_images, compare_images):
+            __compare_image(fileA, fileB, diff_images_path)
+    else:
 
-    for (fileA, fileB) in zip(base_images, compare_images):
-        __compare_image(fileA, fileB, diff_images_path)
+        print("Folders path provided in keyword, does not exist!!")
 
     """
     This is a keyword method
@@ -69,31 +75,33 @@ def compare_screenshots(base_images_path, compare_images_path, diff_images_path)
 
 
 def create_report(base_images_path, compare_images_path, diff_images_path):
+    if os.path.exists(base_images_path) and os.path.exists(compare_images_path) and os.path.exists(diff_images_path):
+        base_screenshots = os.listdir(base_images_path)
+        compare_screenshots_list = os.listdir(compare_images_path)
+        diff_screenshots = os.listdir(diff_images_path)
 
-    base_screenshots = os.listdir(base_images_path)
-    compare_screenshots_list = os.listdir(compare_images_path)
-    diff_screenshots = os.listdir(diff_images_path)
+        if os.path.isdir(os.getcwd() + "\\" + "compare-screenshots-result"):
+            shutil.rmtree(os.getcwd() + "\\" + "compare-screenshots-result")
+            os.mkdir(os.getcwd() + "\\" + "compare-screenshots-result")
+        else:
+            os.mkdir(os.getcwd() + "\\" + "compare-screenshots-result"+"\\output.txt")
 
-    if os.path.isdir(os.getcwd() + "\\" + "compare-screenshots-result"):
-        shutil.rmtree(os.getcwd() + "\\" + "compare-screenshots-result")
-        os.mkdir(os.getcwd() + "\\" + "compare-screenshots-result")
+        with open(os.getcwd() + "\\" + "compare-screenshots-result"+"\\output.txt", "w") as file:
+            file.write(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S') + " Compare Screenshots Output: \n")
+            file.write("\nBase Screenshots: ")
+            for filename in base_screenshots:
+                file.write('\t' + filename)
+
+            file.write("\nCompare Screenshots: ")
+            for filename in compare_screenshots_list:
+                file.write('\t' + filename)
+
+            file.write("\nDifference found in (" + str(len(diff_screenshots)) + ") Screenshots: ")
+            for filename in diff_screenshots:
+                file.write('\t' + filename)
     else:
-        os.mkdir(os.getcwd() + "\\" + "compare-screenshots-result"+"\\output.txt")
 
-    with open(os.getcwd() + "\\" + "compare-screenshots-result"+"\\output.txt", "w") as file:
-        file.write("Compare Screenshots Output: \n")
-        file.write("\nBase Screenshots: ")
-        for filename in base_screenshots:
-            file.write('\t' + filename)
-
-        file.write("\nCompare Screenshots: ")
-        for filename in compare_screenshots_list:
-            file.write('\t' + filename)
-
-        file.write("\nDifference found in (" + str(len(diff_screenshots)) + ") Screenshots: ")
-        for filename in diff_screenshots:
-            file.write('\t' + filename)
-
+        print("Folders path provided in keyword, does not exist!!")
     """
     This is a keyword method
     This keyword will move and replace screenshots from compare_screenshots to base_screenshots
@@ -106,14 +114,3 @@ def move_all_difference_found_screenshots(compare_screenshots_path, base_screens
         files = os.listdir(compare_screenshots_path)
         for f in files:
             shutil.copy2(compare_screenshots_path + f, base_screenshots_path + f)
-
-
-    # os.system("Python " + os.path.realpath(__file__).replace(__file__, "") + "Diff-Report" + "\diff.py " + diff_images_path.replace('/', "\Ameya").replace("Ameya", ""))
-    # print("python " + os.getcwd().replace("\\", "/") + """/Diff Report/""" + "diff.py" + " " + diff_images_path.replace("'", ""))
-    # subprocess.call(["python", os.getcwd().replace("\\", "/") + """/Diff Report/""" + "diff.py", "path", diff_images_path], shell=False)
-    # print("Python " + os.path.realpath(__file__).replace(__file__, "") + """Diff Report""" + "\diff.py " + diff_images_path.replace('/', "\Ameya").replace("Ameya", ""))
-
-
-if __name__ == '__main__':
-    move_all_difference_found_screenshots('E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/compare-images/',
-                                          'E:/RobotFrameworkProjects/compare-screenshots/compare-screenshots/Test/base-images/')
