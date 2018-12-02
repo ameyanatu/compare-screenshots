@@ -26,6 +26,7 @@
 ##### (Note: This library tested on windows platform, however, I am sure it will work on the Linux platform as well. If you found any issue then please let me know.)
 
 #### For more information regarding this library please read my article on LinkedIn: 
+https://www.linkedin.com/pulse/compare-screenshots-ameya-natu/
 
 #### Credits:
 
